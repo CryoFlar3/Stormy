@@ -4,8 +4,9 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Bundle;
+import android.nfc.Tag;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -90,7 +91,7 @@ public class MainActivity extends ActionBarActivity {
             });
         }
         else {
-            Toast.makeText(this, "Network is unavailable", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.ntework_unavailible_message), Toast.LENGTH_LONG).show();
         }
 
         Log.d(TAG, "Main UI code is running");
@@ -126,7 +127,7 @@ public class MainActivity extends ActionBarActivity {
 
         Log.d(TAG, currentWeather.getFormattedTime());
 
-        return new CurrentWeather();
+        return currentWeather;
     }
 
     private boolean isNetworkAvailable() {

@@ -8,7 +8,6 @@ import java.util.TimeZone;
  * Created by CryoFlar3 on 1/28/2015.
  */
 public class CurrentWeather {
-
     private String mIcon;
     private Long mTime;
     private double mTemperature;
@@ -24,7 +23,6 @@ public class CurrentWeather {
     public void setTimeZone(String timeZone) {
         mTimeZone = timeZone;
     }
-
 
     public String getIcon() {
         return mIcon;
@@ -76,10 +74,6 @@ public class CurrentWeather {
         return mTime;
     }
 
-    public void setTime(Long time) {
-        mTime = time;
-    }
-
     public String getFormattedTime() {
         SimpleDateFormat formatter = new SimpleDateFormat("h:mm a");
         formatter.setTimeZone(TimeZone.getTimeZone(getTimeZone()));
@@ -87,6 +81,10 @@ public class CurrentWeather {
         String timeString = formatter.format(dateTime);
 
         return timeString;
+    }
+
+    public void setTime(Long time) {
+        mTime = time;
     }
 
     public int getTemperature() {
@@ -105,7 +103,7 @@ public class CurrentWeather {
         mHumidity = humidity;
     }
 
-    public double getPrecipChance() {
+    public int getPrecipChance() {
         double precipPercentage = mPrecipChance * 100;
         return (int)Math.round(precipPercentage);
     }
