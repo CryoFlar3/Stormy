@@ -1,13 +1,15 @@
-package computermentors.org.stormy;
+package computermentors.org.stormy.weather;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
+import computermentors.org.stormy.R;
+
 /**
  * Created by CryoFlar3 on 1/28/2015.
  */
-public class CurrentWeather {
+public class Current {
     private String mIcon;
     private Long mTime;
     private double mTemperature;

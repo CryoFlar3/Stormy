@@ -1,10 +1,12 @@
-package computermentors.org.stormy;
+package computermentors.org.stormy.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import computermentors.org.stormy.R;
 
 /**
  * Created by CryoFlar3 on 1/25/2015.
