@@ -5,12 +5,12 @@ package computermentors.org.stormy.weather;
  */
 public class Day {
     private long mTime;
-    private String mSummery;
+    private String mSummary;
     private double mTemperatureMax;
     private String mIcon;
-    private String mTimeZone;
+    private String mTimezone;
 
-    public long getTime() {
+    public long getTime(long time) {
         return mTime;
     }
 
@@ -18,12 +18,12 @@ public class Day {
         mTime = time;
     }
 
-    public String getSummery() {
-        return mSummery;
+    public String getSummary() {
+        return mSummary;
     }
 
-    public void setSummery(String summery) {
-        mSummery = summery;
+    public void setSummary(String summary) {
+        mSummary = summary;
     }
 
     public double getTemperatureMax() {
@@ -42,11 +42,11 @@ public class Day {
         mIcon = icon;
     }
 
-    public String getTimeZone() {
-        return mTimeZone;
+    public String getTimezone(String timezone) {
+        return mTimezone;
     }
 
-    public void setTimeZone(String timeZone) {
-        mTimeZone = timeZone;
+    public void setTimezone(String timezone) {
+        mTimezone = timezone;
     }
 }
